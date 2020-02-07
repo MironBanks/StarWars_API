@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	font-size: 10px;
+	font-family: 'Roboto Mono', sans-serif;
+	overflow: scroll;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+	width: 0px; /* Remove scrollbar space */
+	background: transparent; /* Optional: just make scrollbar invisible */
+}
+body {
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+header {
+	height: 100px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button_container {
+	margin: 60px auto;
+	width: 90rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+.btn {
+	font-size: 3rem;
+	font-family: 'Teko';
+}
+
+.results_container {
+	margin-top: 100px;
+	width: 90rem;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/*Films Cards*/
+
+.card {
+	width: 400px;
+}
+
+.card_content {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+span {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+h4 {
+	font-family: 'Teko';
+	font-size: 4rem;
+	font-weight: 200;
+}
+
+h5 {
+	font-size: 1.5rem;
+	font-weight: 400;
+}

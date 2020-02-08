@@ -18,32 +18,60 @@
 		/>
 
 		<link rel="stylesheet" href="main.css" />
-		<link rel="stylesheet" href="media.css" />
+        <link rel="stylesheet" href="media.css" />
+        <link rel="stylesheet" href="nav.css" />
 	</head>
 
 	<body>
-		<header>
-			<div class="title">
-				<a>
-					<img
-						src="https://fontmeme.com/permalink/200207/1c9944a01b5992d8deca43d8dcbf33e3.png"
-						alt="star-wars-font"
-						border="0"
-					/>
-				</a>
-			</div>
-		</header>
+        <div class="container">
+                <div class="nav_container">
+                <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+                <input id="toggle" type="checkbox">
+        
+                 <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
+        
+                 <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+                 <label class="toggle-container" for="toggle">
+                        <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+                     <span class="button button-toggle"></span>
+                    </label>
+        
+                 <!-- The nav menu -->
+                <nav id="buttons" class="nav">
+                    <div id="™film™" class=" nav-item">Films</div>
+                    <div id="™people™" class=" nav-item">People</div>
+                    <div id="™species™" class=" nav-item">Species</div>
+                    <div id="™starships™" class=" nav-item">Starships</div>
+                    <div id="™vehicles™" class=" nav-item">Vehicles</div>
+                    <div id="™planets™" class="nav-item">Planets</div>
+                </nav>
+                </div>
+        
+             <div class="content_container">
+                 <div class="header_container">
+		             <header>
+			             <div class="title">
+					             <img
+						             src="https://fontmeme.com/permalink/200208/0c8eb1e254ca7818a81d51992753e467.png"
+						             alt="star-wars-font"
+						             border="0"
+				                /></a>
+			             </div>
+                     </header>
+                </div>
 
-		<div id="buttons" class="button_container">
-			<div id="™film™" class="btn">Films</div>
-			<div id="™people™" class="btn">People</div>
-			<div id="™species™" class="btn">Species</div>
-			<div id="™starships™" class="btn">Starships</div>
-			<div id="™vehicles™" class="btn">Vehicles</div>
-			<div id="™planets™" class="btn">Planets</div>
-		</div>
+		         <!---   <div id="buttons" class="button_container">
+			             <div id="™film™" class="btn nav-item">Films</div>
+			             <div id="™people™" class="btn nav-item">People</div>
+			             <div id="™species™" class="btn nav-item">Species</div>
+			             <div id="™starships™" class="btn nav-item">Starships</div>
+			             <div id="™vehicles™" class="btn nav-item">Vehicles</div>
+			             <div id="™planets™" class="btn nav-item">Planets</div>
+		             </div> -->
 
-		<div id="results" class="results_container"></div>
+                <div id="results" class="results_container"></div>
+             </div>
+        </div>
 	</body>
 	<script src="script.js"></script>
 </html>
